@@ -1,0 +1,55 @@
+*{
+  margin:0;
+  padding:0;
+}
+/*les margins et les paddings ne sont pas ajoutés aux tailles définies pour les divs*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+@font-face {
+  font-family: 'Alcubierre';
+  src: url('fonts/Alcubierre.otf');
+}
+body{
+  font-family: "Alcubierre", Arial, sans-serif;
+  background-image: url(img/bois.jpg);
+}
+
+header{
+  width: 100%;
+  height: 14vh;
+  /*background-color: blue;*/
+  text-align: center;
+  padding-top: 6vh;
+}
+h1{
+  color: white;
+  font-size: 3em;
+}
+
+#box{
+  /*background-color: grey;*/
+  height: 90vh;
+}
+
+#minibox{
+  /*background-color: yellow;*/
+  padding-top: 13vh;
+}
+
+.ligne{
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 5.5vh;
+  width: 25vw;
+  border: 0.1vw solid black;
+  margin-left: 38vw;
+  border-radius: 0.3vw;
+  margin-top: 0.4vh;
+  color: black;
+  font-size: 1.2em;
+  text-align: center;
+  padding-top: 0.9vh;
+}
