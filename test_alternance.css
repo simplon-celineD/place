@@ -31,16 +31,17 @@ h1{
 }
 
 #box{
-  /*background-color: grey;*/
   height: 90vh;
+
 }
 
 #minibox{
-  /*background-color: yellow;*/
-  padding-top: 13vh;
+  margin-top: 13vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.ligne{
+a {
   background-color: rgba(255, 255, 255, 0.7);
   height: 5.5vh;
   width: 25vw;
@@ -52,4 +53,24 @@ h1{
   font-size: 1.2em;
   text-align: center;
   padding-top: 0.9vh;
+  animation-name: ligne;
+  animation-delay: 1s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  text-decoration: none;
+}
+@keyframes ligne {
+  0% {
+    margin-left: 38vw;
+  }
+  100% {
+    margin-left: 10vw;
+   }
+}
+#divacacher{
+  background-color: red;
+  width: 50vw;
+  height: 60vh;
+  margin-left: 28vw;
+  margin-top: -3.8vh;
 }

@@ -4,9 +4,25 @@
     <meta charset="utf-8">
     <title> test alternance </title>
     <link rel="stylesheet" href="test_alternance.css"/>
-    <script type="text/javascript" src="scripts-base.js"></script>
+
+    <script type="text/javascript">
+
+      function switchInfoPerso(){
+
+        divInfo = document.getElementById('divacacher');
+
+        if(divInfo.style.display == 'none'){
+          divInfo.style.display ='block';
+
+        }
+        else{
+          divInfo.style.display ='none';
+        }
+      }
 
     </script>
+
+
   </head>
   <body>
 
@@ -18,16 +34,56 @@
 
       <article id="minibox">
 
-        <div class="ligne"> Angelina Jolie </div>
-        <div class="ligne"> Beyoncé Knowles </div>
-        <div class="ligne"> Jennifer Aniston </div>
-        <div class="ligne"> Jude Law </div>
-        <div class="ligne"> Leonardo DiCaprio </div>
-        <div class="ligne"> Megan Fox </div>
-        <div class="ligne"> Nicole Kidman </div>
-        <div class="ligne"> Robert Pattinson </div>
-        <div class="ligne"> Robert Redford </div>
-        <div class="ligne"> Selena Gomez </div>
+        <a href="javascript: switchInfoPerso();"<div class="ligne" > Angelina Jolie
+            <div id="divacacher" style="display:none;"> </div>
+        </div></a>
+
+
+        <a href="javascript: switchInfoPerso();"<div class="ligne" > Beyonce Knowles
+            <div id="divacacher" style="display:none;"> </div>
+        </div></a>
+
+
+        <a href="javascript: switchInfoPerso();"><div class="ligne" > Jennifer Aniston
+            <div id="divacacher" style="display:none;"> </div>
+        </div></a>
+
+
+        <a href="javascript: switchInfoPerso();"<div class="ligne" > Jude Law
+            <div id="divacacher" style="display:none;"> </div>
+        </div></a>
+
+
+        <a href="javascript: switchInfoPerso();"<div class="ligne" > Leonardo DiCaprio
+            <div id="divacacher" style="display:none;"> </div>
+        </div></a>
+
+
+        <a href="javascript: switchInfoPerso();"<div class="ligne" > Megan Fox
+            <div id="divacacher" style="display:none;"> </div>
+        </div></a>
+
+
+        <a href="javascript: switchInfoPerso();"<div class="ligne" > Nicole Kidman
+            <div id="divacacher" style="display:none;"> </div>
+        </div></a>
+
+
+        <a href="javascript: switchInfoPerso();"<div class="ligne" > Robert Pattinson
+            <div id="divacacher" style="display:none;"> </div>
+        </div></a>
+
+
+        <a href="javascript: switchInfoPerso();"<div class="ligne" > Robert Redford
+            <div id="divacacher" style="display:none;"> </div>
+        </div></a>
+
+
+        <a href="javascript: switchInfoPerso();"<div class="ligne" > Selena Gomez
+            <div id="divacacher" style="display:none;"> </div>
+        </div></a>
+
+
 
       </article>
 
