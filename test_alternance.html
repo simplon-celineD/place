@@ -1,3 +1,13 @@
+<?php
+try
+{
+  $bdd = new PDO('mysql:host=localhost;dbname=test_alternance','root','lenytiana', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+}
+catch(Exception $e)
+{
+  die('Erreur : ' .$e->getMessage());
+}
+?>
 <!DOCTYPE html>
 <html>
   <head lang="fr_FR">
@@ -34,54 +44,214 @@
 
       <article id="minibox">
 
-        <a href="javascript: switchInfoPerso();"<div class="ligne" > Angelina Jolie
-            <div id="divacacher" style="display:none;"> </div>
-        </div></a>
+        <div class="ligne" >
+          <a href="javascript: switchInfoPerso();">
+            Angelina Jolie
+            <div id="divacacher" style="display:none;">
+              <?php
+
+                    $requete = $bdd->query('SELECT image, description FROM `profiles` WHERE id=1');
+
+                    $donnees = $requete -> execute();
+                    while($donnees =$requete->fetch())
+                    {
+                      echo '<p>'  . $donnees['image'] . ' - ' . $donnees['description'] . '</p>';
+                    }
+
+                ?>
+
+            </div>
+            </a>
+        </div>
 
 
-        <a href="javascript: switchInfoPerso();"<div class="ligne" > Beyonce Knowles
-            <div id="divacacher" style="display:none;"> </div>
-        </div></a>
+        <div class="ligne" >
+          <a href="javascript: switchInfoPerso();">
+              Beyonce Knowles
+            <div id="divacacher" style="display:none;">
+              <?php
+
+                    $requete = $bdd->query('SELECT image, description FROM `profiles` WHERE id=1');
+
+                    $donnees = $requete -> execute();
+                    while($donnees =$requete->fetch())
+                    {
+                      echo '<p>'  . $donnees['image'] . ' - ' . $donnees['description'] . '</p>';
+                    }
+
+                ?>
+
+            </div>
+            </a>
+        </div>
 
 
-        <a href="javascript: switchInfoPerso();"><div class="ligne" > Jennifer Aniston
-            <div id="divacacher" style="display:none;"> </div>
-        </div></a>
+        <div class="ligne" >
+          <a href="javascript: switchInfoPerso();">
+              Jennifer Aniston
+            <div id="divacacher" style="display:none;">
+              <?php
+
+                    $requete = $bdd->query('SELECT image, description FROM `profiles` WHERE id=1');
+
+                    $donnees = $requete -> execute();
+                    while($donnees =$requete->fetch())
+                    {
+                      echo '<p>'  . $donnees['image'] . ' - ' . $donnees['description'] . '</p>';
+                    }
+
+                ?>
+
+            </div>
+            </a>
+        </div>
 
 
-        <a href="javascript: switchInfoPerso();"<div class="ligne" > Jude Law
-            <div id="divacacher" style="display:none;"> </div>
-        </div></a>
+        <div class="ligne" >
+          <a href="javascript: switchInfoPerso();">
+              Jude Law
+            <div id="divacacher" style="display:none;">
+              <?php
+
+                    $requete = $bdd->query('SELECT image, description FROM `profiles` WHERE id=1');
+
+                    $donnees = $requete -> execute();
+                    while($donnees =$requete->fetch())
+                    {
+                      echo '<p>'  . $donnees['image'] . ' - ' . $donnees['description'] . '</p>';
+                    }
+
+                ?>
+
+            </div>
+            </a>
+        </div>
 
 
-        <a href="javascript: switchInfoPerso();"<div class="ligne" > Leonardo DiCaprio
-            <div id="divacacher" style="display:none;"> </div>
-        </div></a>
+        <div class="ligne" >
+          <a href="javascript: switchInfoPerso();">
+              Leonardo DiCaprio
+            <div id="divacacher" style="display:none;">
+              <?php
+
+                    $requete = $bdd->query('SELECT image, description FROM `profiles` WHERE id=1');
+
+                    $donnees = $requete -> execute();
+                    while($donnees =$requete->fetch())
+                    {
+                      echo '<p>'  . $donnees['image'] . ' - ' . $donnees['description'] . '</p>';
+                    }
+
+                ?>
+
+            </div>
+            </a>
+        </div>
 
 
-        <a href="javascript: switchInfoPerso();"<div class="ligne" > Megan Fox
-            <div id="divacacher" style="display:none;"> </div>
-        </div></a>
+        <div class="ligne" >
+          <a href="javascript: switchInfoPerso();">
+              Megan Fox
+            <div id="divacacher" style="display:none;">
+              <?php
+
+                    $requete = $bdd->query('SELECT image, description FROM `profiles` WHERE id=1');
+
+                    $donnees = $requete -> execute();
+                    while($donnees =$requete->fetch())
+                    {
+                      echo '<p>'  . $donnees['image'] . ' - ' . $donnees['description'] . '</p>';
+                    }
+
+                ?>
+
+            </div>
+            </a>
+        </div>
 
 
-        <a href="javascript: switchInfoPerso();"<div class="ligne" > Nicole Kidman
-            <div id="divacacher" style="display:none;"> </div>
-        </div></a>
+        <div class="ligne" >
+          <a href="javascript: switchInfoPerso();">
+              Nicole Kidman
+            <div id="divacacher" style="display:none;">
+              <?php
+
+                    $requete = $bdd->query('SELECT image, description FROM `profiles` WHERE id=1');
+
+                    $donnees = $requete -> execute();
+                    while($donnees =$requete->fetch())
+                    {
+                      echo '<p>'  . $donnees['image'] . ' - ' . $donnees['description'] . '</p>';
+                    }
+
+                ?>
+
+            </div>
+            </a>
+        </div>
 
 
-        <a href="javascript: switchInfoPerso();"<div class="ligne" > Robert Pattinson
-            <div id="divacacher" style="display:none;"> </div>
-        </div></a>
+        <div class="ligne" >
+          <a href="javascript: switchInfoPerso();">
+              Robert Pattinson
+            <div id="divacacher" style="display:none;">
+              <?php
+
+                    $requete = $bdd->query('SELECT image, description FROM `profiles` WHERE id=1');
+
+                    $donnees = $requete -> execute();
+                    while($donnees =$requete->fetch())
+                    {
+                      echo '<p>'  . $donnees['image'] . ' - ' . $donnees['description'] . '</p>';
+                    }
+
+                ?>
+
+            </div>
+            </a>
+        </div>
 
 
-        <a href="javascript: switchInfoPerso();"<div class="ligne" > Robert Redford
-            <div id="divacacher" style="display:none;"> </div>
-        </div></a>
+        <div class="ligne" >
+          <a href="javascript: switchInfoPerso();">
+              Robert Redford
+            <div id="divacacher" style="display:none;">
+              <?php
+
+                    $requete = $bdd->query('SELECT image, description FROM `profiles` WHERE id=1');
+
+                    $donnees = $requete -> execute();
+                    while($donnees =$requete->fetch())
+                    {
+                      echo '<p>'  . $donnees['image'] . ' - ' . $donnees['description'] . '</p>';
+                    }
+
+                ?>
+
+            </div>
+            </a>
+        </div>
 
 
-        <a href="javascript: switchInfoPerso();"<div class="ligne" > Selena Gomez
-            <div id="divacacher" style="display:none;"> </div>
-        </div></a>
+        <div class="ligne" >
+          <a href="javascript: switchInfoPerso();">
+              Selena Gomez
+            <div id="divacacher" style="display:none;">
+              <?php
+
+                    $requete = $bdd->query('SELECT image, description FROM `profiles` WHERE id=1');
+
+                    $donnees = $requete -> execute();
+                    while($donnees =$requete->fetch())
+                    {
+                      echo '<p>'  . $donnees['image'] . ' - ' . $donnees['description'] . '</p>';
+                    }
+
+                ?>
+
+            </div>
+            </a>
+        </div>
 
 
 

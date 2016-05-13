@@ -11,10 +11,11 @@ html {
 }
 @font-face {
   font-family: 'Alcubierre';
-  src: url('fonts/Alcubierre.otf');
+  src: url('Alcubierre.otf');
 }
 body{
   font-family: "Alcubierre", Arial, sans-serif;
+  font-weight: bolder;
   background-image: url(img/bois.jpg);
 }
 
@@ -41,7 +42,7 @@ h1{
   flex-direction: column;
 }
 
-a {
+.ligne {
   background-color: rgba(255, 255, 255, 0.7);
   height: 5.5vh;
   width: 25vw;
@@ -49,15 +50,17 @@ a {
   margin-left: 38vw;
   border-radius: 0.3vw;
   margin-top: 0.4vh;
-  color: black;
   font-size: 1.2em;
   text-align: center;
-  padding-top: 0.9vh;
+  padding-top: 1.3vh;
   animation-name: ligne;
   animation-delay: 1s;
   animation-duration: 5s;
   animation-fill-mode: forwards;
+}
+a{
   text-decoration: none;
+  color: black;
 }
 @keyframes ligne {
   0% {
@@ -68,9 +71,10 @@ a {
    }
 }
 #divacacher{
-  background-color: red;
+  background-color: rgba(255, 255, 255, 0.7);
   width: 50vw;
-  height: 60vh;
+  height: 58vh;
   margin-left: 28vw;
-  margin-top: -3.8vh;
+  margin-top: -4vh;
+  color: black;
 }
