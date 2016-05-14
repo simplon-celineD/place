@@ -1,0 +1,115 @@
+@media screen and (min-width:1024px){
+  *{
+    margin:0;
+    padding:0;
+  }
+  /*les margins et les paddings ne sont pas ajoutés aux tailles définies pour les divs*/
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  @font-face {
+    font-family: 'Alcubierre';
+    src: url('Alcubierre.otf');
+  }
+  body{
+    font-family: "Alcubierre", Arial, sans-serif;
+    font-weight: bolder;
+    background-image: url(img/bois.jpg);
+  }
+
+  header{
+    width: 100%;
+    height: 14vh;
+    /*background-color: blue;*/
+    text-align: center;
+    padding-top: 6vh;
+  }
+  h1{
+    color: white;
+    font-size: 3em;
+  }
+
+  #box{
+    height: 90vh;
+
+  }
+
+  #minibox{
+    margin-top: 13vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lignes {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 5.5vh;
+    width: 25vw;
+    border: 0.1vw solid black;
+    margin-left: 38vw;
+    border-radius: 0.3vw;
+    margin-top: 0.4vh;
+    font-size: 1.2em;
+    text-align: center;
+    padding-left: 3vw;
+    padding-top: 1.3vh;
+    animation-name: ligne;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: row;
+  }
+
+  @keyframes ligne {
+    0% {
+      margin-left: 38vw;
+    }
+    100% {
+      margin-left: 10vw;
+     }
+  }
+
+#descrip1, #descrip2, #descrip3,#descrip4,#descrip5,#descrip6,#descrip7,#descrip8,#descrip9,#descrip10{
+  position:absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 50vw;
+  height: 58vh;
+  margin-left: 40vw;
+  color: black;
+  text-align: center;
+  display: none;
+}
+
+#descrip1{
+  margin-top:-4vh;
+}
+#descrip2{
+  margin-top:-10vh;
+}
+#descrip3{
+  margin-top:-16vh;
+}
+#descrip4{
+  margin-top:-22vh;
+}
+#descrip5{
+  margin-top:-28vh;
+}
+#descrip6{
+  margin-top:-34vh;
+}
+#descrip7{
+  margin-top:-40vh;
+}
+#descrip8{
+  margin-top:-46vh;
+}
+#descrip9{
+  margin-top:-52vh;
+}
+#descrip10{
+  margin-top:-58vh;
+}

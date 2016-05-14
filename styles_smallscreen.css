@@ -1,0 +1,34 @@
+@media screen and (min-width:800px){
+  *{
+    margin:0;
+    padding:0;
+  }
+  /*les margins et les paddings ne sont pas ajoutés aux tailles définies pour les divs*/
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  @font-face {
+    font-family: 'Alcubierre';
+    src: url('Alcubierre.otf');
+  }
+  body{
+    font-family: "Alcubierre", Arial, sans-serif;
+    font-weight: bolder;
+    background-image: url(img/bois.jpg);
+  }
+
+  header{
+    width: 100%;
+    height: 7vh;
+    /*background-color: blue;*/
+    text-align: center;
+    padding-top: 3vh;
+  }
+  h1{
+    color: white;
+    font-size: 1em;
+  }
+}
