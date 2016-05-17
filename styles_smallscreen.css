@@ -1,34 +1,126 @@
-@media screen and (min-width:800px){
-  *{
-    margin:0;
-    padding:0;
-  }
-  /*les margins et les paddings ne sont pas ajoutés aux tailles définies pour les divs*/
-  html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  @font-face {
-    font-family: 'Alcubierre';
-    src: url('Alcubierre.otf');
-  }
-  body{
-    font-family: "Alcubierre", Arial, sans-serif;
-    font-weight: bolder;
-    background-image: url(img/bois.jpg);
-  }
+*{
+  margin:0;
+  padding:0;
+}
+/*les margins et les paddings ne sont pas ajoutés aux tailles définies pour les divs*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+@font-face {
+  font-family: 'Alcubierre';
+  src: url('Alcubierre.otf');
+}
+body{
+  font-family: "Alcubierre", Arial, sans-serif;
+  font-weight: bolder;
+  background-image: url(img/bois.jpg);
+}
+
+@media screen and(max-width: 600px){
+
 
   header{
     width: 100%;
-    height: 7vh;
+    height: 14vh;
     /*background-color: blue;*/
     text-align: center;
-    padding-top: 3vh;
+    padding-top: 6vh;
   }
   h1{
     color: white;
-    font-size: 1em;
+    font-size: 3em;
   }
-}
+
+  #box{
+    height: 90vh;
+
+  }
+
+  #minibox{
+    margin-top: 13vh;
+    display: flex;
+    flex-direction: column;
+  }
+  a{
+    text-decoration: none;
+
+  }
+  .lignes {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 5.5vh;
+    width: 25vw;
+    border: 0.1vw solid black;
+    margin-left: 38vw;
+    border-radius: 0.3vw;
+    margin-top: 0.4vh;
+    font-size: 1em;
+    padding-top: 1.3vh;
+  }
+
+  .nom{
+  color: black;
+  font-size: 1em;
+  text-align: center;
+  }
+
+  .photo img{
+  float: left;
+  width: 9vw;
+  height: 24vh;
+  margin: 1vh 2vw 1vh 1vw;
+  }
+
+  #descrip1, #descrip2, #descrip3,#descrip4,#descrip5,#descrip6,#descrip7,#descrip8,#descrip9,#descrip10{
+  position:absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 50vw;
+  height: 58vh;
+  margin-left: 40vw;
+  padding: 2vh 1vw 2vh 1vw;
+  color: black;
+  display: none;
+  clear: left;
+  }
+
+  #descrip1{
+    margin-top:-4vh;
+
+  }
+  #descrip2{
+    margin-top:-10vh;
+  }
+  #descrip3{
+    margin-top:-16vh;
+  }
+  #descrip4{
+    margin-top:-22vh;
+    overflow-y: scroll;
+  }
+  #descrip5{
+    margin-top:-28vh;
+  }
+  #descrip6{
+    margin-top:-34vh;
+  }
+  #descrip7{
+    margin-top:-40vh;
+    overflow-y: scroll;
+  }
+  #descrip8{
+    margin-top:-46vh;
+  }
+  #descrip9{
+    margin-top:-52vh;
+  }
+  #descrip10{
+    margin-top:-58vh;
+    overflow-y: scroll;
+  }
+
+  #texte p {
+    text-align: justify;
+    margin-top: 2vh;
+  }
