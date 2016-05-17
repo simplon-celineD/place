@@ -1,4 +1,4 @@
-@media screen and (min-width:1024px){
+@media screen and (min-device-width : 480px) and (max-device-width : 1624px){
   *{
     margin:0;
     padding:0;
@@ -89,10 +89,13 @@
   width: 50vw;
   height: 58vh;
   margin-left: 40vw;
+  margin-top: 2vh;
   padding: 2vh 1vw 2vh 1vw;
   color: black;
   display: none;
   clear: left;
+  font-size: 1.1em;
+  text-align: justify;
 }
 
   #descrip1{
@@ -129,8 +132,3 @@
     margin-top:-58vh;
     overflow-y: scroll;
   }
-
-  #texte p {
-    text-align: justify;
-    margin-top: 2vh;
-}

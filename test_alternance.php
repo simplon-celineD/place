@@ -8,8 +8,6 @@ catch(Exception $e)
   die('Erreur : ' .$e->getMessage());
 }
 
-
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,9 +15,9 @@ catch(Exception $e)
 
     <title> test alternance </title>
     <!-- feuille de style pour écran ( ordinateur, tablettes ) -->
-    <link rel="stylesheet" href="styles_bigscreen.css" media="screen and (min-width:800px)"/>
+    <link rel="stylesheet" href="styles_bigscreen.css" media="screen and (min-device-width : 480px) and (max-device-width : 1624px)"/>
     <!-- feuille de style pour écran ( portable )-->
-    <link rel="stylesheet" href="styles_smallscreen.css" media="screen and (max-width:800px)"/>
+    <link rel="stylesheet" href="styles_smallscreen.css" media="screen and (min-device-width : 320px) and (max-device-width : 480px)"/>
 
     <script type="text/javascript">
     /** Fonction basculant la visibilité d'un élément dom
